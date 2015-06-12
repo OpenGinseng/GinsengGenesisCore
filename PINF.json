@@ -1,0 +1,22 @@
+{
+    "@extends": {
+        "devcomp.org": "/pinf.genesis/04-devcomp.org/PINF.proto.json"
+    },
+    "config": {
+        "ScriptedCloud.PINF.Tools/boot/0": {
+            "$depends": [
+                "devcomp.org-dev-local"
+            ]
+        },
+        "ScriptedCloud.PINF.Tools/0": {
+            "topLevelDomain": "ginseng.io",
+            "hostname": "{{env.PGS_WORKSPACE_UID}}.core.open.genesis.ginseng.io",
+            "dirname": "core.open.genesis.ginseng.io~{{env.PGS_WORKSPACE_UID}}",
+            "privateKeyPath": "{{env.HOME}}/.ssh/core.open.genesis.ginseng.io-{{env.PGS_WORKSPACE_UID}}.rsa"
+        }
+    },
+    "mappings": {},
+    "@overlays": [
+        "{{env.PIO_PROFILE_PATH}}"
+    ]
+}
