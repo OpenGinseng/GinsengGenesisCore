@@ -1,0 +1,118 @@
+{
+    "mappings": {
+        "./../.deps/github.com~bash-origin~bash.origin~0/source/installed/master": {
+            "location": "git@github.com:bash-origin/bash.origin.git#239af20cf64c8e37631a3b80605a425aea1edc75"
+        },
+        "./../.deps/github.com~cadorn~fswalker~0/source/installed/master": {
+            "location": "git@github.com:cadorn/fswalker.git#ae378bac45dd4f3f3610b8c22256a656a7d7d772"
+        },
+        "./../.deps/github.com~sourcemint~smi~0/source/installed/master": {
+            "location": "git@github.com:sourcemint/smi.git#1873fec8644be34d4e73eb59704629fb0d18628d"
+        },
+        "./../.deps/github.com~pinf-it~pinf-it-package-insight~0/source/installed/master": {
+            "location": "git@github.com:pinf-it/pinf-it-package-insight.git#fef2d98f43f47d2644790a4c6d91057e5492ef05"
+        },
+        "./../.deps/github.com~sourcemint~smi-for-npm~0/source/installed/master": {
+            "location": "git@github.com:sourcemint/smi-for-npm.git#81eba8a898f5bb1ca90910d1d60d14e4d870cb05"
+        },
+        "./../.deps/github.com~sourcemint~smi-for-git~0/source/installed/master": {
+            "location": "git@github.com:sourcemint/smi-for-git.git#260478feda2be2ffcbd70f3f250789ba4791cc09"
+        },
+        "./../.deps/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
+            "location": "git@github.com:bash-origin/bash.origin.pinf.git#7c658ae0df82ffd855687e2a96a52f62026446c2"
+        },
+        "./../.deps/github.com~bash-origin~bash.origin.prompt~0/source/installed/master": {
+            "location": "git@github.com:bash-origin/bash.origin.prompt.git#138ae6abd6e5ccdc8c5e01c790c9f314a935b812"
+        },
+        "./../.deps/github.com~bash-origin~bash.origin.sourcemint~0/source/installed/master": {
+            "location": "git@github.com:bash-origin/bash.origin.sourcemint.git#4b60bc488da315225481df58b8d4ab62bba76dc1"
+        },
+        "./../.deps/github.com~sourcemint~org.sourcemint.genesis.lib~0/source/installed/master": {
+            "location": "git@github.com:sourcemint/org.sourcemint.genesis.lib.git#26f9c61c91b2db5a3d85e9f8ae9302e1befe0b26"
+        },
+        "./../.deps/github.com~pinf-it~pinf-it-filetree-insight~0/source/installed/master": {
+            "location": "git@github.com:pinf-it/pinf-it-filetree-insight.git#7ef79fba95643b8e7716534374575b6ba0f2a1bf"
+        },
+        "./../.deps/github.com~pinf-to~pto-for-npm~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pto-for-npm.git#6e9720ee38b6edcfc31ae7637e21c7a48491406c"
+        },
+        "./../.deps/github.com~pinf-to~to.pinf.lib~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/to.pinf.lib.git#413e40e0c5a443673f400869d58f41f86d27c4ab"
+        },
+        "./../.deps/github.com~pinf~org.pinf.genesis.lib~0/source/installed/master": {
+            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#ddde4247d638ca20d7cc478c91032487d17e0426"
+        },
+        "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
+            "location": "git@github.com:pinf/org.pinf.lib.git#e70add4071cc3c253a026bbdbc6c4015f58f9c2c"
+        },
+        "./../.deps/github.com~sourcemint~smt-copy~0/source/installed/master": {
+            "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
+        },
+        "./../.deps/github.com~devcomp~org.devcomp.portal.ComponentTree~0/source/installed/master": {
+            "location": "git@github.com:devcomp/org.devcomp.portal.ComponentTree.git#d95e90802f8214f66fdb90a292f0a97cf5fb19a1"
+        },
+        "./../.deps/github.com~pinf-logic~pinf.logic-for-devcomp.portal.ComponentTree~0/source/installed/master": {
+            "location": "git@github.com:pinf-logic/pinf.logic-for-devcomp.portal.ComponentTree.git#b7a9c3eb5a98e92822b595525e0737a357268e80"
+        },
+        "./../.deps/github.com~pinf-it~pinf-it-bundler~0/source/installed/master": {
+            "location": "git@github.com:pinf-it/pinf-it-bundler.git#6ca289d5526e716d6405d9245b6d22383feafcf6"
+        },
+        "./../.deps/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.server.grunt.git#5a151e8f400aa279293681b3c131b60a54ae2110"
+        },
+        "./../.deps/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.server.webpack.git#eacea45e389d196e8ba668e9e31ffa8a301c1010"
+        },
+        "./../.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.proxy.git#30d9982082be8172aefb62df873b403ed34ee7a5"
+        },
+        "./../.deps/github.com~pinf-io~io.pinf.pio.postsync~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.pio.postsync.git#d8f94c32130d34b9eca0fe75d4a29a306248d2bf"
+        },
+        "./../.deps/github.com~SensePlatform~vfs-local~0/source/installed/master": {
+            "location": "git@github.com:SensePlatform/vfs-local.git#022f736db8e437a49e7ea81013fb5bb30e9a7e4d"
+        },
+        "./../.deps/github.com~pinf-io~vfs-socket~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/vfs-socket.git#9cb5aedaf3fe50b82072632434cbbd27436cd304"
+        },
+        "./../.deps/github.com~pinf-io~io.pinf.pio.sync~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.pio.sync.git#76a0f501a36c0f4e821e827c9d851fe1a41ffc81"
+        },
+        "./../.deps/github.com~pinf-io~pinf.io-for-openshift~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/pinf.io-for-openshift.git#780269ba97eb767d43739fa1e8d8dad0270d2fc8"
+        },
+        "./../.deps/github.com~pinf-io~pinf.io-for-ubuntu~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/pinf.io-for-ubuntu.git#0f81e3dc090be101a81f19e2eaae829bfc54e846"
+        },
+        "./../.deps/github.com~pinf-io~pinf.io-for-unix~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/pinf.io-for-unix.git#d2933e77618b74bf7aba8b017553bea42723d31a"
+        },
+        "./../.deps/github.com~pinf-to~pinf-to-process~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pinf-to-process.git#d2e4359bb43555aa54afae237a5d11df37e0a71d"
+        },
+        "./../.deps/github.com~pinf-to~pinf-to-openshift~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pinf-to-openshift.git#1363624526b376deaf8cdc4687b267a079f47889"
+        },
+        "./../.deps/github.com~pinf-to~pinf-to-dnsimple~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pinf-to-dnsimple.git#8f2459b1515017e5bc911fceeaab0c70eacbdcca"
+        },
+        "./../.deps/github.com~pinf-logic~pinf.logic-for-dns~0/source/installed/master": {
+            "location": "git@github.com:pinf-logic/pinf.logic-for-dns.git#7f8539f94c1e53052c492b92012effb3177c9c8c"
+        },
+        "./../.deps/github.com~pinf-io~io.pinf.pio.profile~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.pio.profile.git#aa6b673e305dbd466b0dc6d7cf80b25fede29cce"
+        },
+        "./../.deps/github.com~pinf-to~pinf-to-digitalocean~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pinf-to-digitalocean.git#309ff0f6328bd35bd5aeafb088a8a8c73c7b0211"
+        },
+        "./../.deps/github.com~pinf-to~pinf-to-travis-ci~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pinf-to-travis-ci.git#d45bc6093a8776493800ed6ec3b4016a45540f8e"
+        },
+        "./../.deps/github.com~bash-origin~bash.origin.nw~0/source/installed/master": {
+            "location": "git@github.com:bash-origin/bash.origin.nw.git#0dace562f12a2d811de45bf5ab82e2ba0a3f68c5"
+        },
+        "./../.deps/github.com~pinf-to~pinf-to-nwjs~0/source/installed/master": {
+            "location": "git@github.com:pinf-to/pinf-to-nwjs.git#ae202e8601b6063ac7a870c3c72c5bcc31ffc8e5(master)"
+        }
+    }
+}
