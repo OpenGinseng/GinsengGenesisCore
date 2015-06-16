@@ -23,13 +23,17 @@
                     "boot": {
                         "config": "io.pinf.server.grunt/0"
                     },
+                    "env": {
+                        "VERBOSE": "1",
+                        "DEBUG": "1"
+                    },
                     "config": {
                         "io.pinf.server.grunt/0": {
                             "port": 8083,
                             "bind": "127.0.0.1",
                             "grunts": {
                                 "org.devcomp.portal.ComponentTree": {
-                                    "location": "{{PGS_PACKAGES_DIRPATH}}/github.com~devcomp~org.devcomp.portal.ComponentTree~0/source/installed/master"
+                                    "location": "{{__DIRNAME__}}/.deps/github.com~devcomp~org.devcomp.portal.ComponentTree~0/source/installed/master"
                                 }
                             }
                         }
@@ -49,14 +53,14 @@
                             "bind": "127.0.0.1",
                             "packs": {
                                 "org.devcomp.portal.ComponentTree": {
-                                    "location": "{{PGS_PACKAGES_DIRPATH}}/github.com~devcomp~org.devcomp.portal.ComponentTree~0/source/installed/master"
+                                    "location": "{{__DIRNAME__}}/.deps/github.com~devcomp~org.devcomp.portal.ComponentTree~0/source/installed/master"
                                 }
                             }
                         }
                     }
                 },
                 "services-proxy": {
-                    "basePath": "/pinf.genesis/03-vm.pinf.io/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
+                    "basePath": "{{__DIRNAME__}}/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
                     "commands": {
                         "start": "node server.js"
                     },
@@ -438,13 +442,13 @@
     },
     "mappings": {
         "./../.deps/github.com~bash-origin~bash.origin~0/source/installed/master": {
-            "location": "git@github.com:bash-origin/bash.origin.git#239af20cf64c8e37631a3b80605a425aea1edc75"
+            "location": "git@github.com:bash-origin/bash.origin.git#c8d36482fd0c86da9b27106870c6c25c7695643e(master)"
         },
         "./../.deps/github.com~cadorn~fswalker~0/source/installed/master": {
             "location": "git@github.com:cadorn/fswalker.git#ae378bac45dd4f3f3610b8c22256a656a7d7d772"
         },
         "./../.deps/github.com~sourcemint~smi~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi.git#1873fec8644be34d4e73eb59704629fb0d18628d"
+            "location": "git@github.com:sourcemint/smi.git#b04cc6408b86aba7ba3ffe80140f7e2c08ff1cb4(plparser)"
         },
         "./../.deps/github.com~pinf-it~pinf-it-package-insight~0/source/installed/master": {
             "location": "git@github.com:pinf-it/pinf-it-package-insight.git#fef2d98f43f47d2644790a4c6d91057e5492ef05"
@@ -453,7 +457,7 @@
             "location": "git@github.com:sourcemint/smi-for-npm.git#81eba8a898f5bb1ca90910d1d60d14e4d870cb05"
         },
         "./../.deps/github.com~sourcemint~smi-for-git~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi-for-git.git#260478feda2be2ffcbd70f3f250789ba4791cc09"
+            "location": "git@github.com:sourcemint/smi-for-git.git#3af60e6ee8c91603bb34a93017c4d433a74f1881(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.pinf.git#7c658ae0df82ffd855687e2a96a52f62026446c2"
@@ -477,28 +481,28 @@
             "location": "git@github.com:pinf-to/to.pinf.lib.git#413e40e0c5a443673f400869d58f41f86d27c4ab"
         },
         "./../.deps/github.com~pinf~org.pinf.genesis.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#ddde4247d638ca20d7cc478c91032487d17e0426"
+            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#50be7e6f584b605d88578d047ecd8e726f19f5ed(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.lib.git#e70add4071cc3c253a026bbdbc6c4015f58f9c2c"
+            "location": "git@github.com:pinf/org.pinf.lib.git#a16e3606efad5df41a359f1cafbbd5d00c187363(master)"
         },
         "./../.deps/github.com~sourcemint~smt-copy~0/source/installed/master": {
             "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
         },
         "./../.deps/github.com~devcomp~org.devcomp.portal.ComponentTree~0/source/installed/master": {
-            "location": "git@github.com:devcomp/org.devcomp.portal.ComponentTree.git#d95e90802f8214f66fdb90a292f0a97cf5fb19a1"
+            "location": "git@github.com:devcomp/org.devcomp.portal.ComponentTree.git#8c8886109e280412c8af58b73724ef91a93d6f08(master)"
         },
         "./../.deps/github.com~pinf-logic~pinf.logic-for-devcomp.portal.ComponentTree~0/source/installed/master": {
-            "location": "git@github.com:pinf-logic/pinf.logic-for-devcomp.portal.ComponentTree.git#b7a9c3eb5a98e92822b595525e0737a357268e80"
+            "location": "git@github.com:pinf-logic/pinf.logic-for-devcomp.portal.ComponentTree.git#7d68827cbc93c9bcfd6298cbe552f7d277fd0e46(master)"
         },
         "./../.deps/github.com~pinf-it~pinf-it-bundler~0/source/installed/master": {
             "location": "git@github.com:pinf-it/pinf-it-bundler.git#6ca289d5526e716d6405d9245b6d22383feafcf6"
         },
         "./../.deps/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master": {
-            "location": "git@github.com:pinf-io/io.pinf.server.grunt.git#5a151e8f400aa279293681b3c131b60a54ae2110"
+            "location": "git@github.com:pinf-io/io.pinf.server.grunt.git#9e4cd27a9b4c6c196e18dbdc20b69a011b919779(master)"
         },
         "./../.deps/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master": {
-            "location": "git@github.com:pinf-io/io.pinf.server.webpack.git#eacea45e389d196e8ba668e9e31ffa8a301c1010"
+            "location": "git@github.com:pinf-io/io.pinf.server.webpack.git#338601b238be616ea020e6f110cd90b1d6aacfec(master)"
         },
         "./../.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master": {
             "location": "git@github.com:pinf-io/io.pinf.proxy.git#30d9982082be8172aefb62df873b403ed34ee7a5"
