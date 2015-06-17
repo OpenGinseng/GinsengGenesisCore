@@ -379,7 +379,10 @@
                 "ssh.key": {
                     "path": "{{$from.system.privateKeyPath}}"
                 }
-            }
+            },
+            "$depends": [
+                "io.virtualcloud.genesis"
+            ]
         },
         "github.com/pinf-to/pinf-to-digitalocean/0": {
             "$to": "server-services",
@@ -438,17 +441,20 @@
                     }
                 }
             }
+        },
+        "github.com~virtualcloud-io~virtualcloud-for-pio.profile~0": {
+            "$to": "io.virtualcloud.genesis"
         }
     },
     "mappings": {
         "./../.deps/github.com~bash-origin~bash.origin~0/source/installed/master": {
-            "location": "git@github.com:bash-origin/bash.origin.git#c8d36482fd0c86da9b27106870c6c25c7695643e(master)"
+            "location": "git@github.com:bash-origin/bash.origin.git#5b9e6f421d191dae66a5e2814a5386421dda2b20(master)"
         },
         "./../.deps/github.com~cadorn~fswalker~0/source/installed/master": {
             "location": "git@github.com:cadorn/fswalker.git#ae378bac45dd4f3f3610b8c22256a656a7d7d772"
         },
         "./../.deps/github.com~sourcemint~smi~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi.git#b04cc6408b86aba7ba3ffe80140f7e2c08ff1cb4(plparser)"
+            "location": "git@github.com:sourcemint/smi.git#0c62c0d011560ccebd32ece3b6e8048d8a297532(plparser)"
         },
         "./../.deps/github.com~pinf-it~pinf-it-package-insight~0/source/installed/master": {
             "location": "git@github.com:pinf-it/pinf-it-package-insight.git#fef2d98f43f47d2644790a4c6d91057e5492ef05"
@@ -460,7 +466,7 @@
             "location": "git@github.com:sourcemint/smi-for-git.git#3af60e6ee8c91603bb34a93017c4d433a74f1881(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
-            "location": "git@github.com:bash-origin/bash.origin.pinf.git#7c658ae0df82ffd855687e2a96a52f62026446c2"
+            "location": "git@github.com:bash-origin/bash.origin.pinf.git#af09b11aec2b7755250beb59ffe67dca2f939eea(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin.prompt~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.prompt.git#138ae6abd6e5ccdc8c5e01c790c9f314a935b812"
@@ -481,10 +487,10 @@
             "location": "git@github.com:pinf-to/to.pinf.lib.git#413e40e0c5a443673f400869d58f41f86d27c4ab"
         },
         "./../.deps/github.com~pinf~org.pinf.genesis.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#50be7e6f584b605d88578d047ecd8e726f19f5ed(master)"
+            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#7e140af874ca55715832b089303be0fdeb61dda4(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.lib.git#a16e3606efad5df41a359f1cafbbd5d00c187363(master)"
+            "location": "git@github.com:pinf/org.pinf.lib.git#d9d5d3aafed8895b340c2ea11e203eb777bbd18b(master)"
         },
         "./../.deps/github.com~sourcemint~smt-copy~0/source/installed/master": {
             "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
@@ -554,6 +560,9 @@
         },
         "./../.deps/github.com~pinf-to~pinf-to-nwjs~0/source/installed/master": {
             "location": "git@github.com:pinf-to/pinf-to-nwjs.git#ae202e8601b6063ac7a870c3c72c5bcc31ffc8e5(master)"
+        },
+        "./../.deps/github.com~virtualcloud-io~virtualcloud-for-pio.profile~0/source/installed/master": {
+            "location": "git@github.com:virtualcloud-io/virtualcloud-for-pio.profile.git#faf5b09c3b9b78b6cae8d82d125b471bc39f5976(master)"
         }
     }
 }
