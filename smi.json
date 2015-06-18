@@ -445,7 +445,7 @@
             "location": "git@github.com:sourcemint/smi-for-npm.git#81eba8a898f5bb1ca90910d1d60d14e4d870cb05"
         },
         "./../.deps/github.com~sourcemint~smi-for-git~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi-for-git.git#3af60e6ee8c91603bb34a93017c4d433a74f1881"
+            "location": "git@github.com:sourcemint/smi-for-git.git#8b2d8d642f303abfb363bda11ff684a695e8f6b8(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.pinf.git#4d75647e4a4109ebd93fc88a4238da6d2fc7d665(master)"
@@ -472,7 +472,7 @@
             "location": "git@github.com:pinf/org.pinf.genesis.lib.git#b2ffe100b31a490bbabc028faafdb8b51bfa98e4"
         },
         "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.lib.git#f06a9fae233a11a8d5f600d25b7a22f63ea5e9c7"
+            "location": "git@github.com:pinf/org.pinf.lib.git#3dfc49cee58545c63d92eb5b5de4741c98423006(master)"
         },
         "./../.deps/github.com~sourcemint~smt-copy~0/source/installed/master": {
             "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
