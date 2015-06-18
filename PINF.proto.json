@@ -1,7 +1,7 @@
 {
     "@extends": {
-        "devcomp.org": "/pinf.genesis/04-devcomp.org/PINF.proto.json",
-        "genesis.virtualcloud.io": "/pinf.genesis/05-genesis.virtualcloud.io/PINF.proto.json"        
+        "devcomp.org": "!/pinf.genesis/04-devcomp.org/PINF.proto.json",
+        "genesis.virtualcloud.io": "!/pinf.genesis/05-genesis.virtualcloud.io/PINF.proto.json"        
     },
     "config": {
         "ScriptedCloud.PINF.Tools/boot/0": {
