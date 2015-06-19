@@ -487,10 +487,10 @@
             "location": "git@github.com:pinf-to/to.pinf.lib.git#03c97d85fda87344064e85fe0529ac37938ad327(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.genesis.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#02e68f593973df173d77c9b48e515761111eb9e6(master)"
+            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#6aad5e96e883ae1589a8b8651aa257bedfdb94b2(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.lib.git#a60c4ae274ec5f89250e518dbd0aacd014c69b8a(master)"
+            "location": "git@github.com:pinf/org.pinf.lib.git#dd0082ca26945c26a17edd49cd06758d2af98b49(master)"
         },
         "./../.deps/github.com~sourcemint~smt-copy~0/source/installed/master": {
             "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
@@ -505,7 +505,7 @@
             "location": "git@github.com:SensePlatform/vfs-local.git#022f736db8e437a49e7ea81013fb5bb30e9a7e4d"
         },
         "./../.deps/github.com~pinf-io~vfs-socket~0/source/installed/master": {
-            "location": "git@github.com:pinf-io/vfs-socket.git#9cb5aedaf3fe50b82072632434cbbd27436cd304"
+            "location": "git@github.com:pinf-io/vfs-socket.git#aa7c9f3a87ad12840ed9539658469a323208f690(master)"
         },
         "./../.deps/github.com~pinf-io~io.pinf.pio.sync~0/source/installed/master": {
             "location": "git@github.com:pinf-io/io.pinf.pio.sync.git#76a0f501a36c0f4e821e827c9d851fe1a41ffc81"
