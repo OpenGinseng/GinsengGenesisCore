@@ -442,7 +442,7 @@
             "location": "git@github.com:sourcemint/smi-for-git.git#8b2d8d642f303abfb363bda11ff684a695e8f6b8(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
-            "location": "git@github.com:bash-origin/bash.origin.pinf.git#4d75647e4a4109ebd93fc88a4238da6d2fc7d665(master)"
+            "location": "git@github.com:bash-origin/bash.origin.pinf.git#3b48868d20e562c0ff41a1845cf1dde87b4816d6(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin.prompt~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.prompt.git#138ae6abd6e5ccdc8c5e01c790c9f314a935b812"
