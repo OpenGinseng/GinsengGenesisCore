@@ -448,13 +448,13 @@
     },
     "mappings": {
         "./../.deps/github.com~bash-origin~bash.origin~0/source/installed/master": {
-            "location": "git@github.com:bash-origin/bash.origin.git#21511831717bdf40983ae91586ab352863c428d8(master)"
+            "location": "git@github.com:bash-origin/bash.origin.git#7465e31db503bf1ca533de2e5e22d277ecd46d14(master)"
         },
         "./../.deps/github.com~cadorn~fswalker~0/source/installed/master": {
             "location": "git@github.com:cadorn/fswalker.git#ae378bac45dd4f3f3610b8c22256a656a7d7d772"
         },
         "./../.deps/github.com~sourcemint~smi~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi.git#d4f85053510fe43912878ffd2e285d3bd2a6580c(plparser)"
+            "location": "git@github.com:sourcemint/smi.git#9540f9befac7496c964cea12df1f9ab774a7fd6e(master)"
         },
         "./../.deps/github.com~pinf-it~pinf-it-package-insight~0/source/installed/master": {
             "location": "git@github.com:pinf-it/pinf-it-package-insight.git#fef2d98f43f47d2644790a4c6d91057e5492ef05"
@@ -487,7 +487,7 @@
             "location": "git@github.com:pinf-to/to.pinf.lib.git#03c97d85fda87344064e85fe0529ac37938ad327(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.genesis.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#ed797fb500cf352c3a84cd7394284f13e8d0ef55(master)"
+            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#02e68f593973df173d77c9b48e515761111eb9e6(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
             "location": "git@github.com:pinf/org.pinf.lib.git#a60c4ae274ec5f89250e518dbd0aacd014c69b8a(master)"
