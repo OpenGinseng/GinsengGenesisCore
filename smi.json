@@ -490,7 +490,7 @@
             "location": "git@github.com:pinf/org.pinf.genesis.lib.git#ed797fb500cf352c3a84cd7394284f13e8d0ef55(master)"
         },
         "./../.deps/github.com~pinf~org.pinf.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.lib.git#fe2e4ae03a6d221db3fe3e41c6c6c39fbdaa8ec4(master)"
+            "location": "git@github.com:pinf/org.pinf.lib.git#a60c4ae274ec5f89250e518dbd0aacd014c69b8a(master)"
         },
         "./../.deps/github.com~sourcemint~smt-copy~0/source/installed/master": {
             "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
