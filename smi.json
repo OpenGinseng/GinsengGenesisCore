@@ -499,7 +499,7 @@
             "location": "git@github.com:pinf-to/pinf-to-process.git#118de54b4e31eb42c7d6c7ebdde72808d8d7e12d(master)"
         },
         "./../.deps/github.com~pinf-to~pinf-to-openshift~0/source/installed/master": {
-            "location": "git@github.com:pinf-to/pinf-to-openshift.git#1363624526b376deaf8cdc4687b267a079f47889"
+            "location": "git@github.com:pinf-to/pinf-to-openshift.git#aee9d81f729a88c61070a2bd987d39d4d02c158b(master)"
         },
         "./../.deps/github.com~pinf-to~pinf-to-dnsimple~0/source/installed/master": {
             "location": "git@github.com:pinf-to/pinf-to-dnsimple.git#8f2459b1515017e5bc911fceeaab0c70eacbdcca"
@@ -511,7 +511,7 @@
             "location": "git@github.com:pinf-tools/CloudCommands.git#059d22e3ea5afaffb93d50a61e1c60f45f20e51d(master)"
         },
         "./../.deps/github.com~pinf-space~Genesis~0/source/installed/master": {
-            "location": "git@github.com:pinf-space/Genesis.git#df9205540bc167c1faeebe4a522277662c331712(master)"
+            "location": "git@github.com:pinf-space/Genesis.git#c1bbe58864be12ce102a8c89c912da957b91e2eb(master)"
         },
         "./../.deps/github.com~pinf-io~io.pinf.pio.profile~0/source/installed/master": {
             "location": "git@github.com:pinf-io/io.pinf.pio.profile.git#10ca2538501839187cf90e4810b95ce0aaf363a9(master)"
