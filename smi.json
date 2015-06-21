@@ -511,7 +511,7 @@
             "location": "git@github.com:sourcemint/sm.resolve.git#75d02b7a530d3abb375179518371532becc54ca0(master)"
         },
         "./../.deps/github.com~bash-origin~bash.origin~0/source/installed/master": {
-            "location": "git@github.com:bash-origin/bash.origin.git#7465e31db503bf1ca533de2e5e22d277ecd46d14(master)"
+            "location": "git@github.com:bash-origin/bash.origin.git#a122dd34183a64fa74bbb218a4c9958dc20226a3(master)"
         },
         "./../.deps/github.com~cadorn~fswalker~0/source/installed/master": {
             "location": "git@github.com:cadorn/fswalker.git#ae378bac45dd4f3f3610b8c22256a656a7d7d772"
@@ -716,7 +716,7 @@
         "org.pinf.lib": "0.1.5",
         "babel": "4.7.16",
         "pinf-primitives-js": "0.2.0",
-        "bash.origin": "0.1.22",
+        "bash.origin": "0.1.23",
         "fswalker": "0.1.0",
         "json-stable-stringify": "1.0.0",
         "pinf-it-package-insight": "0.1.8",
