@@ -55,7 +55,7 @@
         "github.com/pinf-to/pinf-to-process/0": {
             "$to": {
                 "services-proxy": {
-                    "basePath": "{{__DIRNAME__}}/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
+                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
                     "commands": {
                         "start": "node server.js"
                     },
@@ -70,7 +70,7 @@
                     }
                 },
                 "grunt-service": {
-                    "basePath": "{{__DIRNAME__}}/.deps/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master",
+                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master",
                     "commands": {
                         "start": "./bin/run-dev-server"
                     },
@@ -90,7 +90,7 @@
                     }
                 },
                 "webpack-service": {
-                    "basePath": "{{__DIRNAME__}}/.deps/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master",
+                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master",
                     "commands": {
                         "start": "./bin/run-dev-server"
                     },
@@ -140,14 +140,14 @@
         "github.com/sourcemint/smi-for-git/0": {
             "$to": "smi-git-catalog",
             "export": {
-                "catalog": "{{__DIRNAME__}}/smi.json"
+                "catalog": "{{env.PGS_WORKSPACE_ROOT}}/smi.json"
             }
         },
         "github.com/sourcemint/smi-for-npm/0": {
             "$to": "smi-npm-catalog",
             "declaredMappings": "{{$from.smi-git-catalog.declaredMappings}}",
             "export": {
-                "catalog": "{{__DIRNAME__}}/smi.json"
+                "catalog": "{{env.PGS_WORKSPACE_ROOT}}/smi.json"
             }
         },
         "github.com/pinf-space/Genesis/0": {
@@ -291,7 +291,7 @@
                                 "org.pinf.lib",
                                 "io.pinf.proxy"
                             ],
-                            "location": "{{__DIRNAME__}}/node_modules/io.pinf.server.grunt",
+                            "location": "{{env.PGS_WORKSPACE_ROOT}}/node_modules/io.pinf.server.grunt",
                             "boot": {
                                 "config": "io.pinf.server.grunt/0"
                             },
@@ -311,7 +311,7 @@
                                 "org.pinf.lib",
                                 "io.pinf.proxy"
                             ],
-                            "location": "{{__DIRNAME__}}/node_modules/io.pinf.server.webpack",
+                            "location": "{{env.PGS_WORKSPACE_ROOT}}/node_modules/io.pinf.server.webpack",
                             "boot": {
                                 "config": "io.pinf.server.webpack/0"
                             },
