@@ -329,7 +329,7 @@
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud": {
-            "location": "git@github.com:pinf-tools/ScriptedCloud.git#1210f168d0666c3438f7ff3d5bf6105aa2f090e7(master)",
+            "location": "git@github.com:pinf-tools/ScriptedCloud.git#561153f0250a49048fab27b0c379c323c44e8dda(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org": {
@@ -355,7 +355,7 @@
             "location": "git@github.com:sourcemint/smi-for-npm.git#49c8089300268d8820ebfd165bdaa4541a212b22(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~smi-for-git~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi-for-git.git#84bccfb13a272f0c74644ca252cd57532dc0ab27(master)"
+            "location": "git@github.com:sourcemint/smi-for-git.git#b35bc388c5139906ceddea838eaddc945f98fe14(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.pinf.git#98104e050e661398f4821363e06c6dba1a249a9d(master)"
@@ -400,7 +400,7 @@
             "alias": "pinf-to-openshift"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-to~pinf-to-dnsimple~0/source/installed/master": {
-            "location": "git@github.com:pinf-to/pinf-to-dnsimple.git#8f2459b1515017e5bc911fceeaab0c70eacbdcca",
+            "location": "git@github.com:pinf-to/pinf-to-dnsimple.git#44c45f644999f92b36b5a8950f92ba5affb5338a(master)",
             "alias": "pinf-to-dnsimple"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-logic~pinf.logic-for-dns~0/source/installed/master": {
@@ -416,11 +416,11 @@
             "alias": "tools.pinf.CloudCommands"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.pio.profile~0/source/installed/master": {
-            "location": "git@github.com:pinf-io/io.pinf.pio.profile.git#516d68360aa51d540db3b6aeda11d206ef295915(master)",
+            "location": "git@github.com:pinf-io/io.pinf.pio.profile.git#a5bc643758d51e22b14c7e35aa757a48c6a93b9e(master)",
             "alias": "io.pinf.pio.profile"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-to~pinf-to-digitalocean~0/source/installed/master": {
-            "location": "git@github.com:pinf-to/pinf-to-digitalocean.git#309ff0f6328bd35bd5aeafb088a8a8c73c7b0211",
+            "location": "git@github.com:pinf-to/pinf-to-digitalocean.git#90856471d1d31219f94ca182d6fdedf9f343a9e1(master)",
             "alias": "pinf-to-digitalocean"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-to~pinf-to-travis-ci~0/source/installed/master": {
