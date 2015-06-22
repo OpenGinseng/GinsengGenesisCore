@@ -199,6 +199,11 @@
                 "ssh.key": {
                     "path": "{{$from.system.privateKeyPath}}"
                 }
+            },
+            "credentials": {
+                "aws.amazon.com": {},
+                "dnsimple.com": {},
+                "digitalocean.com": {}
             }
         },
         "github.com/pinf-to/pinf-to-openshift/0": {
@@ -329,7 +334,7 @@
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud": {
-            "location": "git@github.com:pinf-tools/ScriptedCloud.git#561153f0250a49048fab27b0c379c323c44e8dda(master)",
+            "location": "git@github.com:pinf-tools/ScriptedCloud.git#b85a72f6ca3a0234227a5931ff58eb73dd8aa385(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org": {
