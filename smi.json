@@ -1,27 +1,27 @@
 {
     "@extends": {
         "03-vm.pinf.io/PINF.core.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.core.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.core.json",
             "@args": {}
         },
         "03-pinf.tools.ScriptedCloud/PINF.core.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.core.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.core.json",
             "@args": {}
         },
         "03-pinf.tools.ScriptedCloud/PINF.proto.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto.json",
             "@args": {}
         },
         "03-vm.pinf.io/PINF.proto.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto.json",
             "@args": {}
         },
         "03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json",
             "@args": {}
         },
         "03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json",
             "@args": {
                 "PGS_WORKSPACE_ROOT": "{{__DIRNAME__}}",
                 "PGS_PACKAGES_DIRPATH": "{{__DIRNAME__}}/.deps",
@@ -32,7 +32,7 @@
             }
         },
         "03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json",
             "@args": {
                 "PGS_WORKSPACE_ROOT": "{{__DIRNAME__}}",
                 "PGS_PACKAGES_DIRPATH": "{{__DIRNAME__}}/.deps",
@@ -43,11 +43,11 @@
             }
         },
         "04-devcomp.org/PINF.core.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.core.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.core.json",
             "@args": {}
         },
         "04-devcomp.org/PINF.proto.json": {
-            "location": "{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.proto.json",
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.proto.json",
             "@args": {}
         }
     },
