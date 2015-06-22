@@ -325,15 +325,15 @@
     },
     "mappings": {
         "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io": {
-            "location": "git@github.com:pinf-io/io.pinf.vm.git#ca288c17c5e4506ef76eb5aeb831b3335b626a2a(master)",
+            "location": "git@github.com:pinf-io/io.pinf.vm.git#fd9ba757f95761d00349edae3ea13772f6df1b5a(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud": {
-            "location": "git@github.com:pinf-tools/ScriptedCloud.git#79b1235c108d1e7388c3ed3ddb63b7fda4cc7ae9(master)",
+            "location": "git@github.com:pinf-tools/ScriptedCloud.git#1210f168d0666c3438f7ff3d5bf6105aa2f090e7(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org": {
-            "location": "git@github.com:devcomp/devcomp.org.git#8c8c5a93a50a84897be489c157ed3e5886cebb3e(master)",
+            "location": "git@github.com:devcomp/devcomp.org.git#be1fcd9153b96b483e680c60f4a9cf7e842b4cf0(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~sm.resolve~0/source/installed/master": {
@@ -379,7 +379,7 @@
             "location": "git@github.com:pinf-to/to.pinf.lib.git#03c97d85fda87344064e85fe0529ac37938ad327(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf~org.pinf.genesis.lib~0/source/installed/master": {
-            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#c7d8f15a2b7b0c248a062b7cc63edabf005f23b3(master)"
+            "location": "git@github.com:pinf/org.pinf.genesis.lib.git#ef69c0add168b23dcab4500b11fdb6be810a61ff(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf~org.pinf.lib~0/source/installed/master": {
             "location": "git@github.com:pinf/org.pinf.lib.git#29ce9282ae092d373ddc282b47b02ee23c7e6b09(master)"
