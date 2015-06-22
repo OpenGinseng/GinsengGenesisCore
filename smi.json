@@ -24,7 +24,7 @@
             "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json",
             "@args": {
                 "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
-                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
+                "PGS_PACKAGES_DIRPATH": "{{env.PGS_PACKAGES_DIRPATH}}",
                 "grunts": {
                     "local": {},
                     "remote": {}
@@ -35,7 +35,7 @@
             "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json",
             "@args": {
                 "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
-                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
+                "PGS_PACKAGES_DIRPATH": "{{env.PGS_PACKAGES_DIRPATH}}",
                 "packs": {
                     "local": {},
                     "remote": {}
@@ -55,7 +55,7 @@
         "github.com/pinf-to/pinf-to-process/0": {
             "$to": {
                 "grunt-service": {
-                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master",
+                    "basePath": "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master",
                     "commands": {
                         "start": "./bin/run-dev-server"
                     },
@@ -75,7 +75,7 @@
                     }
                 },
                 "services-proxy": {
-                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
+                    "basePath": "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
                     "commands": {
                         "start": "node server.js"
                     },
@@ -90,7 +90,7 @@
                     }
                 },
                 "webpack-service": {
-                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master",
+                    "basePath": "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master",
                     "commands": {
                         "start": "./bin/run-dev-server"
                     },
@@ -360,7 +360,7 @@
             "location": "git@github.com:sourcemint/smi-for-npm.git#49c8089300268d8820ebfd165bdaa4541a212b22(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~smi-for-git~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi-for-git.git#788618eeb45cf40a3ac4a51c076f1522a1bbfd30(master)"
+            "location": "git@github.com:sourcemint/smi-for-git.git#d82a0f27dace5e8083dec1b1416fde3f4f6f6e9b(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.pinf.git#98104e050e661398f4821363e06c6dba1a249a9d(master)"
