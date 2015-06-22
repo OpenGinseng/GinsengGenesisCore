@@ -346,7 +346,7 @@
             "location": "git@github.com:cadorn/fswalker.git#ae378bac45dd4f3f3610b8c22256a656a7d7d772"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~smi~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi.git#4972291a334a16b6fc3d823e55ac254b0cd9a2c9(master)"
+            "location": "git@github.com:sourcemint/smi.git#2a1a68b7adde83bd8bd09881b7c4ee8874d1b890(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-it~pinf-it-package-insight~0/source/installed/master": {
             "location": "git@github.com:pinf-it/pinf-it-package-insight.git#fef2d98f43f47d2644790a4c6d91057e5492ef05"
