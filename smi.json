@@ -330,7 +330,7 @@
     },
     "mappings": {
         "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io": {
-            "location": "git@github.com:pinf-io/io.pinf.vm.git#a68422666164016ba835994400483e923074851c(master)",
+            "location": "git@github.com:pinf-io/io.pinf.vm.git#d82095541a9386e7716cc9c872addf14bf870161(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud": {
