@@ -23,8 +23,8 @@
         "03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json": {
             "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json",
             "@args": {
-                "PGS_WORKSPACE_ROOT": "{{__DIRNAME__}}",
-                "PGS_PACKAGES_DIRPATH": "{{__DIRNAME__}}/.deps",
+                "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
+                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
                 "grunts": {
                     "local": {},
                     "remote": {}
@@ -34,8 +34,8 @@
         "03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json": {
             "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json",
             "@args": {
-                "PGS_WORKSPACE_ROOT": "{{__DIRNAME__}}",
-                "PGS_PACKAGES_DIRPATH": "{{__DIRNAME__}}/.deps",
+                "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
+                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
                 "packs": {
                     "local": {},
                     "remote": {}
