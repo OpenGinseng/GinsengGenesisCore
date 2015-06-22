@@ -1,6 +1,8 @@
 {
     "@extends": {
-        "devcomp.org": "!/pinf.genesis/04-devcomp.org/PINF.proto.json",
+        "devcomp.org": "!/pinf.genesis/04-devcomp.org/PINF.proto.json"
+    },
+    "DISABLED_@extends": {
         "genesis.virtualcloud.io": "!/pinf.genesis/05-genesis.virtualcloud.io/PINF.proto.json"        
     },
     "config": {
