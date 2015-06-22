@@ -1,22 +1,59 @@
 {
+    "@extends": {
+        "03-vm.pinf.io/PINF.core.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.core.json",
+            "@args": {}
+        },
+        "03-pinf.tools.ScriptedCloud/PINF.core.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.core.json",
+            "@args": {}
+        },
+        "03-pinf.tools.ScriptedCloud/PINF.proto.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto.json",
+            "@args": {}
+        },
+        "03-vm.pinf.io/PINF.proto.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto.json",
+            "@args": {}
+        },
+        "03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json",
+            "@args": {}
+        },
+        "03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json",
+            "@args": {
+                "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
+                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
+                "grunts": {
+                    "local": {},
+                    "remote": {}
+                }
+            }
+        },
+        "03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json",
+            "@args": {
+                "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
+                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
+                "packs": {
+                    "local": {},
+                    "remote": {}
+                }
+            }
+        },
+        "04-devcomp.org/PINF.core.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.core.json",
+            "@args": {}
+        },
+        "04-devcomp.org/PINF.proto.json": {
+            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.proto.json",
+            "@args": {}
+        }
+    },
     "config": {
         "github.com/pinf-to/pinf-to-process/0": {
             "$to": {
-                "services-proxy": {
-                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
-                    "commands": {
-                        "start": "node server.js"
-                    },
-                    "boot": {
-                        "config": "io.pinf.proxy/0"
-                    },
-                    "config": {
-                        "io.pinf.proxy/0": {
-                            "port": 8081,
-                            "bind": "127.0.0.1"
-                        }
-                    }
-                },
                 "grunt-service": {
                     "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master",
                     "commands": {
@@ -37,6 +74,21 @@
                         }
                     }
                 },
+                "services-proxy": {
+                    "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.proxy~0/source/installed/master",
+                    "commands": {
+                        "start": "node server.js"
+                    },
+                    "boot": {
+                        "config": "io.pinf.proxy/0"
+                    },
+                    "config": {
+                        "io.pinf.proxy/0": {
+                            "port": 8081,
+                            "bind": "127.0.0.1"
+                        }
+                    }
+                },
                 "webpack-service": {
                     "basePath": "{{env.PGS_WORKSPACE_ROOT}}/.deps/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master",
                     "commands": {
@@ -50,6 +102,54 @@
                             "port": 8084,
                             "bind": "127.0.0.1",
                             "packs": {}
+                        }
+                    }
+                }
+            }
+        },
+        "github.com/pinf-io/io.pinf.pio.sync/0": {
+            "$to": {
+                "pio-sync-services": {
+                    "services": {
+                        "io.pinf.server.grunt": {
+                            "depends": [
+                                "bash.origin",
+                                "io.pinf.pio.postsync",
+                                "org.pinf.genesis.lib",
+                                "org.pinf.lib",
+                                "io.pinf.proxy"
+                            ],
+                            "location": "{{env.PGS_WORKSPACE_ROOT}}/node_modules/io.pinf.server.grunt",
+                            "boot": {
+                                "config": "io.pinf.server.grunt/0"
+                            },
+                            "config": {
+                                "io.pinf.server.grunt/0": {
+                                    "port": 8083,
+                                    "bind": "{{$from.server-services.vm.ip}}",
+                                    "grunts": {}
+                                }
+                            }
+                        },
+                        "io.pinf.server.webpack": {
+                            "depends": [
+                                "bash.origin",
+                                "io.pinf.pio.postsync",
+                                "org.pinf.genesis.lib",
+                                "org.pinf.lib",
+                                "io.pinf.proxy"
+                            ],
+                            "location": "{{env.PGS_WORKSPACE_ROOT}}/node_modules/io.pinf.server.webpack",
+                            "boot": {
+                                "config": "io.pinf.server.webpack/0"
+                            },
+                            "config": {
+                                "io.pinf.server.webpack/0": {
+                                    "port": 8084,
+                                    "bind": "{{$from.server-services.vm.ip}}",
+                                    "packs": {}
+                                }
+                            }
                         }
                     }
                 }
@@ -226,59 +326,11 @@
                     }
                 }
             }
-        },
-        "github.com/pinf-io/io.pinf.pio.sync/0": {
-            "$to": {
-                "pio-sync-services": {
-                    "services": {
-                        "io.pinf.server.grunt": {
-                            "depends": [
-                                "bash.origin",
-                                "io.pinf.pio.postsync",
-                                "org.pinf.genesis.lib",
-                                "org.pinf.lib",
-                                "io.pinf.proxy"
-                            ],
-                            "location": "{{env.PGS_WORKSPACE_ROOT}}/node_modules/io.pinf.server.grunt",
-                            "boot": {
-                                "config": "io.pinf.server.grunt/0"
-                            },
-                            "config": {
-                                "io.pinf.server.grunt/0": {
-                                    "port": 8083,
-                                    "bind": "{{$from.server-services.vm.ip}}",
-                                    "grunts": {}
-                                }
-                            }
-                        },
-                        "io.pinf.server.webpack": {
-                            "depends": [
-                                "bash.origin",
-                                "io.pinf.pio.postsync",
-                                "org.pinf.genesis.lib",
-                                "org.pinf.lib",
-                                "io.pinf.proxy"
-                            ],
-                            "location": "{{env.PGS_WORKSPACE_ROOT}}/node_modules/io.pinf.server.webpack",
-                            "boot": {
-                                "config": "io.pinf.server.webpack/0"
-                            },
-                            "config": {
-                                "io.pinf.server.webpack/0": {
-                                    "port": 8084,
-                                    "bind": "{{$from.server-services.vm.ip}}",
-                                    "packs": {}
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
     },
     "mappings": {
         "{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io": {
-            "location": "git@github.com:pinf-io/io.pinf.vm.git#fd9ba757f95761d00349edae3ea13772f6df1b5a(master)",
+            "location": "git@github.com:pinf-io/io.pinf.vm.git#a68422666164016ba835994400483e923074851c(master)",
             "install": false
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud": {
@@ -308,7 +360,7 @@
             "location": "git@github.com:sourcemint/smi-for-npm.git#49c8089300268d8820ebfd165bdaa4541a212b22(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~smi-for-git~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi-for-git.git#b35bc388c5139906ceddea838eaddc945f98fe14(master)"
+            "location": "git@github.com:sourcemint/smi-for-git.git#788618eeb45cf40a3ac4a51c076f1522a1bbfd30(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.pinf.git#98104e050e661398f4821363e06c6dba1a249a9d(master)"
@@ -339,6 +391,10 @@
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~smt-copy~0/source/installed/master": {
             "location": "git@github.com:sourcemint/smt-copy.git#07de206d61805eb785309bb08433552c9a19a0c4"
+        },
+        "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master": {
+            "location": "git@github.com:pinf-io/io.pinf.server.grunt.git#9e4cd27a9b4c6c196e18dbdc20b69a011b919779",
+            "alias": "io.pinf.server.grunt"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.proxy~0/source/installed/master": {
             "location": "git@github.com:pinf-io/io.pinf.proxy.git#30d9982082be8172aefb62df873b403ed34ee7a5",
@@ -379,10 +435,6 @@
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-to~pinf-to-travis-ci~0/source/installed/master": {
             "location": "git@github.com:pinf-to/pinf-to-travis-ci.git#d45bc6093a8776493800ed6ec3b4016a45540f8e",
             "alias": "pinf-to-travis-ci"
-        },
-        "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.server.grunt~0/source/installed/master": {
-            "location": "git@github.com:pinf-io/io.pinf.server.grunt.git#9e4cd27a9b4c6c196e18dbdc20b69a011b919779",
-            "alias": "io.pinf.server.grunt"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~pinf-io~io.pinf.server.webpack~0/source/installed/master": {
             "location": "git@github.com:pinf-io/io.pinf.server.webpack.git#338601b238be616ea020e6f110cd90b1d6aacfec",
@@ -438,6 +490,11 @@
         "JSONPath": "0.11.0",
         "changeset": "0.1.0",
         "q-throttle": "0.1.0",
+        "express": "4.13.0",
+        "grunt": "0.4.5",
+        "grunt-bower-concat": "0.5.0",
+        "grunt-contrib-watch": "0.6.1",
+        "send": "0.12.3",
         "bunyan": "1.4.0",
         "http-hash-router": "1.1.0",
         "stack": "0.1.0",
@@ -446,11 +503,6 @@
         "aws-sdk": "2.1.35",
         "uuid": "2.0.1",
         "do-wrapper": "0.1.0",
-        "express": "4.13.0",
-        "grunt": "0.4.5",
-        "grunt-bower-concat": "0.5.0",
-        "grunt-contrib-watch": "0.6.1",
-        "send": "0.12.3",
         "css-loader": "0.14.5",
         "file-loader": "0.8.4",
         "jsx-loader": "0.13.2",
@@ -461,57 +513,5 @@
         "style-loader": "0.12.3",
         "url-loader": "0.5.6",
         "webpack": "1.9.11"
-    },
-    "@extends": {
-        "03-vm.pinf.io/PINF.core.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.core.json",
-            "@args": {}
-        },
-        "03-pinf.tools.ScriptedCloud/PINF.core.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.core.json",
-            "@args": {}
-        },
-        "03-pinf.tools.ScriptedCloud/PINF.proto.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto.json",
-            "@args": {}
-        },
-        "03-vm.pinf.io/PINF.proto.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto.json",
-            "@args": {}
-        },
-        "03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-pinf.tools.ScriptedCloud/PINF.proto/to.pinf.dnsimple.proto.patch.json",
-            "@args": {}
-        },
-        "03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.grunt~0.proto.patch.json",
-            "@args": {
-                "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
-                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
-                "grunts": {
-                    "local": {},
-                    "remote": {}
-                }
-            }
-        },
-        "03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/03-vm.pinf.io/PINF.proto/io.pinf.server.webpack~0.proto.patch.json",
-            "@args": {
-                "PGS_WORKSPACE_ROOT": "{{env.PGS_WORKSPACE_ROOT}}",
-                "PGS_PACKAGES_DIRPATH": "{{env.PGS_WORKSPACE_ROOT}}/.deps",
-                "packs": {
-                    "local": {},
-                    "remote": {}
-                }
-            }
-        },
-        "04-devcomp.org/PINF.core.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.core.json",
-            "@args": {}
-        },
-        "04-devcomp.org/PINF.proto.json": {
-            "location": "!{{env.PGS_PACKAGES_DIRPATH}}/04-devcomp.org/PINF.proto.json",
-            "@args": {}
-        }
     }
 }
