@@ -355,7 +355,7 @@
             "location": "git@github.com:sourcemint/smi-for-npm.git#49c8089300268d8820ebfd165bdaa4541a212b22(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~sourcemint~smi-for-git~0/source/installed/master": {
-            "location": "git@github.com:sourcemint/smi-for-git.git#5595fe30404a4362c56c9274fed668e419c1be5c(master)"
+            "location": "git@github.com:sourcemint/smi-for-git.git#84bccfb13a272f0c74644ca252cd57532dc0ab27(master)"
         },
         "{{env.PGS_PACKAGES_DIRPATH}}/github.com~bash-origin~bash.origin.pinf~0/source/installed/master": {
             "location": "git@github.com:bash-origin/bash.origin.pinf.git#98104e050e661398f4821363e06c6dba1a249a9d(master)"
