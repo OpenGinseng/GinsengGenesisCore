@@ -8,6 +8,8 @@ The *explicit intention* is to seed a **Common & Open Distributed Tooling Founda
 
 > [I Christoph Dorn](http://ChristophDorn.ceo) dedicate **Ginseng.Genesis Open Core** to my wife, love & light Tabatha who, after more than 10 years of trust and patience, is still my biggest supporter no matter what we were faced with. I hereby release **Ginseng.Genesis Open Core** to the *World* by [UNLICENSING](http://unlicense.org/) everything. **Set yourself free** as I plan on doing in collaboration with others! Join me and we will get there much faster together.
 
+In traditional terms, **Ginseng.Genesis Open Core** is a portable web-app-shell that boots itself from a specific sequence of JSON declarations and connects to the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web).
+
 
 Install
 =======
