@@ -1,7 +1,7 @@
 {
     "@extends": {
-        "devcomp.org": "!/pinf.genesis/04-devcomp.org/PINF.proto.json",
-        "genesis.virtualcloud.io": "!/pinf.genesis/05-genesis.virtualcloud.io/PINF.proto.json",
+        "devcomp.org": "{{env.PGS_PACKAGES_DIRPATH}}/github.com~devcomp~devcomp.org~0/source/installed/master/PINF.proto.json",
+        "genesis.virtualcloud.io": "{{env.PGS_PACKAGES_DIRPATH}}/github.com~virtualcloud-io~genesis.virtualcloud.io~0/source/installed/master/PINF.proto.json",
         "virtualcloud-for-pio.profile/sm": {
             "location": "{{env.PGS_PACKAGES_DIRPATH}}/github.com~virtualcloud-io~genesis.virtualcloud.io~0/source/installed/master/PINF.proto/virtualcloud-for-pio.profile~0.sm.json"
         },
